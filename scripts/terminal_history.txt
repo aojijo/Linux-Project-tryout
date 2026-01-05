@@ -1,0 +1,152 @@
+    1  pwd
+    2  ssh -T git@github.com
+    3  git status
+    4  git remote -v
+    5  gh repo clone aojijo/Linux-Project-tryout
+    6  git@github.com:aojijo/Linux-Project-tryout.git
+    7  sudo apt install gh
+    8  gh repo clone aojijo/Linux-Project-tryout
+    9  git clone git@github.com:aojijo/Linux-Project-tryout.git
+   10  pwd
+   11  cd~
+   12  cd ~
+   13  pwd
+   14  cd Linux-Project-tryout
+   15  git status
+   16  pwd
+   17  mkdir -p data/raw
+   18  mkdir scripts
+   19  mkdir results
+   20  cd data/raw
+   21  pwd
+   22  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/004/SRR2589044/SRR2589044_1.fastq.gz
+   23  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/004/SRR2589044/SRR2589044_2.fastq.gz
+   24  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/003/SRR2584863/SRR2584863_1.fastq.gz
+   25  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/003/SRR2584863/SRR2584863_2.fastq.gz
+   26  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/006/SRR2584866/SRR2584866_1.fastq.gz
+   27  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/006/SRR2584866/SRR2584866_2.fastq.gz
+   28  ls
+   29  gunzip SRR2584863_1.fastq.gz
+   30  head -n 4 SRR2584863_1.fastq.gz
+   31  head -n 4 SRR2584863_1.fastq
+   32  tail -n 4 head -n 4 SRR2584863_1.fastq
+   33  fastqc -h
+   34  sudo apt install fastqc
+   35  fastqc -h
+   36  ls -l -h
+   37  fastqc *.fastq*
+   38  ls
+   39  ~
+   40  ~cd
+   41  ~ cd
+   42  pwd
+   43  cd results
+   44  cd
+   45  ~/results
+   46  ~/Linux-Project-tryout/results
+   47  cd ~/Linux-Project-tryout/results
+   48  mkdir fastqc_untrimmed
+   49  ls
+   50  ../data/raw
+   51  cd ../data/raw
+   52  mv * zip~/Linux-Project-tryout/results/fastqc_untrimmed
+   53  zip ~/Linux-Project-tryout/results/fastqc_untrimmed
+   54  mv *.zip ~/Linux-Project-tryout/results/fastqc_untrimmed
+   55  mv *.html ~/Linux-Project-tryout/results/fastqc_untrimmed
+   56  ls
+   57  cd ../results/fastqc_untrimmed
+   58  ../results/fastqc_untrimmed
+   59  cd ../results/fastqc_untrimmed
+   60  cd ../results
+   61  cd..results/fastqc_untrimmed
+   62  cd../results/fastqc_untrimmed
+   63  ls ../
+   64  cd ~/Linux-Project-tryout/results/fastqc_untrimmed
+   65  ls
+   66  for filename in *.zip >do >unzip $filename > done
+   67  ls
+   68  for filename in *.zip; do unzip $filename; done
+   69  sudo apt install unzip
+   70  $ for filename in *.zip
+   71  > do
+   72  > unzip $filename
+   73  > done
+   74  for filename in *.zip; > do
+   75  > unzip $filename
+   76  > done
+   77  for filename in *.zip; do unzip $filename; done
+   78  ls
+   79  ls -F SRR2584863_1_fastqc/
+   80  less SRR2584863_1_fastqc/summary.txt
+   81  cd ./results
+   82  cd ../results
+   83  cd ../results/
+   84  ls data
+   85  cd ~/Linux-Project tryout/results
+   86  cd ~
+   87  cd ~/Linux-Project-tryout/results/
+   88  mkdir fastqc_summaries
+   89  ls
+   90  cd fastqc_untrimmed
+   91  cat */summary.txt > ~/Linux-Project-tryout/results/fastqc_summaries
+   92  ls
+   93  cd -
+   94  cd fastqc_summaries
+   95  grep FAIL 
+   96  cd -
+   97  grep FAILfastqc_summaries
+   98  grep FAILfastqc_summaries.txt
+   99  grep FAIL fastqc_summaries.txt
+  100  cd fastqc_summaries
+  101  ls
+  102  cd ../fastqc_untrimmed
+  103  cd../fastqc_summaries
+  104  cd ../fastqc_summaries
+  105  ls
+  106  cd ../fastqc_untrimmed
+  107  cat */summary.txt > ../fastqc_summaries/all_summaries.txt
+  108  cd ../fastqc_summaries
+  109  ls
+  110  head all_summaries.txt
+  111  grep FAIL all_summaries.txt
+  112  trimmomatic
+  113  java -version
+  114  mkdir -p ~/Linux-Project-tryout/tools
+  115  cd ~/Linux-Project-tryout/tools
+  116  wget http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
+  117  unzip Trimmomatic-0.39.zip
+  118  java -jar ~/Linux-Project-tryout/tools/Trimmomatic-0.39/trimmomatic-0.39.jar
+  119  trimmnomatic
+  120  cd../data/raw
+  121  cd -
+  122  cd ../.. dat
+  123  cd../../data
+  124  cd
+  125  trimmomatic
+  126  echo 'alias trimmomatic="java -jar ~/Linux-Project-tryout/tools/Trimmomatic-0.39/trimmomatic-0.39.jar"' >> ~/.bashrc
+  127  source ~/.bashrc
+  128  trimmomatic
+  129  ~/Linux-Project-tryout/data/raw
+  130  cd  ~/Linux-Project-tryout/data/raw
+  131  ls
+  132  SRR2584863_1.fastq
+  133  ls SRR2584863_1.fastq
+  134  cd ../data
+  135  mkdir -p ~/Linux-Project-tryout/results/trimmed
+  136  pwd
+  137  cd ../../results/trimmed
+  138  cd ~ Linux-Project-tryout
+  139  cd ~/Linux-Project-tryout
+  140  ls
+  141  java -jar ~/Linux-Project-tryout/tools/Trimmomatic-0.39/trimmomatic-0.39.jar PE -phred33   data/raw/SRR2584863_1.fastq   data/raw/SRR2584863_2.fastq.gz   results/trimmed/SRR2584863_1_paired.fastq.gz   results/trimmed/SRR2584863_1_unpaired.fastq.gz   results/trimmed/SRR2584863_2_paired.fastq.gz   results/trimmed/SRR2584863_2_unpaired.fastq.gz   ILLUMINACLIP:~/Linux-Project-tryout/tools/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+  142  trimmomatic PE data/raw/SRR2584863_1.fastq data/raw/SRR2584863_2.fastq.gz            results/trimmed/SRR2584863_1.trim.fastq.gz results/trimmed/SRR2584863_1un.trim.fastq.gz            results/trimmed/SRR2584863_2.trim.fastq.gz results/trimmed/SRR2584863_2un.trim.fastq.gz            SLIDINGWINDOW:4:20 MINLEN:25 ILLUMINACLIP:~/Linux-Project-tryout/tools/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10
+  143  echo 'alias trimmomatic="java -jar ~/Linux-Project-tryout/tools/Trimmomatic-0.39/trimmomatic-0.39.jar"' >> ~/.bashrc
+  144  source ~/.bashrc
+  145  trimmomatic PE -phred33   data/raw/SRR2584863_1.fastq   data/raw/SRR2584863_2.fastq.gz   results/trimmed/SRR2584863_1_paired.fastq.gz   results/trimmed/SRR2584863_1_unpaired.fastq.gz   results/trimmed/SRR2584863_2_paired.fastq.gz   results/trimmed/SRR2584863_2_unpaired.fastq.gz   ILLUMINACLIP:/home/aojijo/Linux-Project-tryout/tools/Trimmomatic-0.39/adapters/TruSeq3-PE.fa:2:30:10   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+  146  cd ~/Linux-Project-tryout
+  147  nano .gitignore
+  148  cat .gitignore
+  149  git add .
+  150  git status
+  151  history
+  152  history > ~/Linux-Project-tryout/scripts/terminal_history.txt
