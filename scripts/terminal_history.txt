@@ -233,3 +233,46 @@
   233  sudo apt install samtools
   234  samtools view -S -b results/sam/SRR2584866.aligned.sam > results/bam/SRR2584866.aligned.bam
   235  history > ~/Linux-Project-tryout/scripts/terminal_history.txt
+  236  git commit -m "Sam commit"
+  237  git oush origin main
+  238  git push origin main
+  239  git add scripts/terminal_history.txt
+  240  git commit -m "Updating history script"
+  241  git push origin main
+  242  ls
+  243  cd ~/Linux-Project-tryout
+  244  ls
+  245  ls results
+  246  ls results bam
+  247  ls results/bam
+  248  samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR2584866.aligned.bam
+  249  samtools flagstat results/bam/SRR2584866.aligned.sorted.bam
+  250  bcftools
+  251  sudo apt install bcftools
+  252  ls data
+  253  ls data/refgenome
+  254  ls results/bcf
+  255  bcftools mpileup -O b -o results/bcf/SRR2584866_raw.bcf \-f data/refgenome/ecoli_rel606.fasta results/bam/SRR2584866.aligned.sorted.bam
+  256  ls results/bcf
+  257  bcftools call --ploidy 1 -m -v -o results/vcf/SRR2584866_variants.vcf results/bcf/SRR2584866_raw.bcf
+  258  ls results/vcf
+  259  vcfutils.pl varFilter results/vcf/SRR2584866_variants.vcf > results/vcf/SRR2584866_finalvariants.vcf
+  260  ls results/vcf
+  261  mpileup --help
+  262  bcftools --help
+  263  bcftools mpileup --help
+  264  bcftools stats results/vcf/SRR2584866_variants.vcf | grep TSTV
+  265  bcftools stats results/vcf/SRR2484866_finalvariants.vcf | grep TSTV
+  266  bcftools stats results/vcf/SRR2584866_finalvariants.vcf | grep TSTV
+  267  less -S results/vcf/SRR2584866_finalvariants.vcf
+  268  samtools index results/bam/SRR2584866.aligned.sorted.bam
+  269  samtools tview results/bam/SRR2584866.aligned.sorted.bam data/refgenome/ecoli_rel606.fasta
+  270  git add scripts/terminal_history.txt
+  271  ls scripts
+  272  git add-A
+  273  git add -A
+  274  git commit -m " VCF commit"
+  275  git push origin main
+  276  git status
+  277  history
+  278  history > ~/Linux-Project-tryout/scripts/terminal_history.txt
